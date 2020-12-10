@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:controller="game.controllers.SetNickController" prefHeight="900.0" prefWidth="1200.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fill="#dfdfdf" layoutX="439.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Пожалуйста, введите никнейм" textAlignment="CENTER" wrappingWidth="401.936767578125">
+         <font>
+            <Font name="Century" size="48.0" />
+         </font>
+      </Text>
+      <Button fx:id="enterName" onAction="#onEnterNameClicked" alignment="CENTER" contentDisplay="CENTER" layoutX="533.0" layoutY="681.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" text="ок">
+         <font>
+            <Font name="Consolas" size="20.0" />
+         </font>
+      </Button>
+      <TextField fx:id="set_nick_TextField" layoutX="471.0" layoutY="557.0" prefHeight="42.0" prefWidth="324.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

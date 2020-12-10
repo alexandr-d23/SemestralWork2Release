@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="900.0" maxWidth="1200.0" prefHeight="900.0" prefWidth="1200.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.controllers.RulesController">
+   <children>
+      <TextArea fx:id="rules_text_rulesText" editable="false" layoutX="129.0" layoutY="142.0" prefHeight="500.0" prefWidth="900.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="142.0">
+         <effect>
+            <Shadow color="WHITE" />
+         </effect>
+      </TextArea>
+      <Button id="rules_btn_confirm" onAction="#rules_btn_confirmClicked" alignment="CENTER" contentDisplay="CENTER" layoutX="534.0" layoutY="758.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" text="ок" textAlignment="CENTER" AnchorPane.bottomAnchor="99.0" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="741.0">
+         <font>
+            <Font name="Consolas" size="20.0" />
+         </font>
+      </Button>
+      <Text fill="WHITE" layoutX="500.0" layoutY="105.3203125" strokeType="OUTSIDE" strokeWidth="0.0" text="Правила" textAlignment="CENTER" wrappingWidth="214.0" AnchorPane.bottomAnchor="740.0" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="486.0" AnchorPane.topAnchor="58.0">
+         <font>
+            <Font name="Century" size="48.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

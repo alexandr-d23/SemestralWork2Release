@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1200.0" style="-fx-background-color: #8f8d8d;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.controllers.CurrentRoomController">
+   <stylesheets>
+      <URL value="@current_room.css" />
+   </stylesheets>
+   <children>
+      <AnchorPane layoutY="14.0" opacity="0.8" prefHeight="126.0" prefWidth="1201.0" style="-fx-background-color: #000000;">
+         <children>
+            <Text fx:id="current_room_text_nickName" fill="#fdfdfd" layoutX="624.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Никнейм" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <effect>
+                  <Glow level="1.0">
+                     <input>
+                        <Lighting diffuseConstant="2.0" light="$null" specularConstant="1.21" specularExponent="14.95" surfaceScale="0.0">
+                           <bumpInput>
+                              <Shadow height="1.0" radius="0.0" width="0.0">
+                                 <color>
+                                 </color></Shadow>
+                           </bumpInput>
+                        </Lighting>
+                     </input>
+                  </Glow>
+               </effect>
+            </Text>
+            <AnchorPane id="brod" layoutX="197.0" layoutY="9.0" prefHeight="108.0" prefWidth="108.0" style="-fx-background-color: #666666;" AnchorPane.leftAnchor="197.0" />
+            <Button fx:id="current_room_btn_exit" layoutX="28.0" layoutY="37.0" mnemonicParsing="false" onAction="#leaveRoom" prefHeight="29.0" prefWidth="178.0" style="-fx-background-color: #000000;" text="Выйти из комнаты" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Consolas" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="801.0" layoutY="24.0" prefHeight="862.0" prefWidth="377.0" style="-fx-background-color: #666666;">
+         <children>
+            <TextArea fx:id="current_room_text_chat" editable="false" layoutX="27.0" layoutY="68.0" prefHeight="581.0" prefWidth="322.0" />
+            <TextField fx:id="current_room_editText_textMessage" layoutX="27.0" layoutY="720.0" prefHeight="62.0" prefWidth="322.0" />
+            <Button fx:id="current_room_sendMessage" layoutX="27.0" layoutY="808.0" mnemonicParsing="false" onAction="#current_room_sendMessageOnClicked" prefHeight="30.0" prefWidth="322.0" text="Отправить">
+               <font>
+                  <Font name="Consolas" size="17.0" />
+               </font></Button>
+            <Text layoutX="36.0" layoutY="692.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Пишите тут" wrappingWidth="108.0">
+               <font>
+                  <Font name="Century" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="28.0" layoutY="40.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Ваш чат" wrappingWidth="124.48126220703125">
+               <font>
+                  <Font name="Century" size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Text layoutX="295.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Игроки" textAlignment="CENTER" wrappingWidth="194.93675231933594">
+         <font>
+            <Font name="Century" size="24.0" />
+         </font>
+      </Text>
+      <AnchorPane id="pane" layoutX="62.0" layoutY="226.0" opacity="0.51" prefHeight="660.0" prefWidth="660.0" style="-fx-background-color: #000000;">
+         <children>
+            <TableView fx:id="current_room_table_listOfPlayers" layoutX="14.0" layoutY="14.0" prefHeight="631.0" prefWidth="636.0" style="-fx-background-color: #000000;">
+              <columns>
+                <TableColumn fx:id="nameColumn" prefWidth="636.0" style="-fx-text-alignment: center" text="Имя" />
+              </columns>
+            </TableView>
+         </children></AnchorPane>
+      <Button fx:id="current_room_btn_play" layoutX="543.0" layoutY="165.0" mnemonicParsing="false" onAction="#current_room_btn_playOnClick" prefHeight="34.0" prefWidth="178.0" text="Играть">
+         <font>
+            <Font name="Consolas" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="current_room_btn_parameters" layoutX="62.0" layoutY="163.0" mnemonicParsing="false" onAction="#current_room_btn_parametersOnClicked" prefHeight="38.0" prefWidth="178.0" text="Параметры комнаты">
+         <font>
+            <Font name="Consolas" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

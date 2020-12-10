@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:controller="game.ui.MenuSceneController" id="pane" prefHeight="900.0" prefWidth="1200.0" scaleShape="false" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <stylesheets>
+      <URL value="@menu.css" />
+   </stylesheets>
+   <children>
+      <Button id="menu_btn_exit" onAction="#menu_btn_exitClicked" alignment="CENTER" contentDisplay="CENTER" layoutX="500.0" layoutY="602.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" text="Выход" textAlignment="JUSTIFY">
+         <font>
+            <Font name="Consolas" size="20.0" />
+         </font>
+      </Button>
+      <Button id="menu_btn_rooms "  onAction="#menu_btn_roomsClicked" alignment="CENTER" contentDisplay="CENTER" layoutX="500.0" layoutY="390.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" text="Комнаты" textAlignment="JUSTIFY">
+         <font>
+            <Font name="Consolas" size="20.0" />
+         </font>
+      </Button>
+      <Button id="menu_btn_rules" onAction="#menu_btn_rulesClicked" alignment="CENTER" layoutX="500.0" layoutY="502.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" text="Правила" textAlignment="JUSTIFY">
+         <font>
+            <Font name="Consolas" size="20.0" />
+         </font>
+      </Button>
+<!--      <Text fill="WHITE" layoutX="476.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Мафия" textAlignment="CENTER" wrappingWidth="248.4993896484375">-->
+<!--         <font>-->
+<!--            <Font name="Mistral" size="108.0" />-->
+<!--         </font>-->
+<!--      </Text>-->
+   </children>
+</AnchorPane>
+

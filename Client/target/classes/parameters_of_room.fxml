@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="900.0" maxWidth="1200.0" prefHeight="900.0" prefWidth="1200.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.ui.ParametersOfRoomController">
+   <children>
+      <Button id="parameters_btn_confirm" onAction="#parameters_btn_confirmOnClicked" alignment="CENTER" layoutX="500.0" layoutY="697.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" text="ок" AnchorPane.bottomAnchor="143.0" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="697.0">
+         <font>
+            <Font name="Consolas" size="20.0" />
+         </font>
+      </Button>
+      <Text fill="WHITE" layoutX="463.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Параметры комнаты" textAlignment="CENTER" wrappingWidth="273.20001220703125" AnchorPane.leftAnchor="463.0" AnchorPane.topAnchor="69.6796875">
+         <font>
+            <Font name="Century" size="48.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="455.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Название:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="301.0" layoutY="398.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Максимальное количество игроков:" textAlignment="RIGHT" wrappingWidth="264.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="parameters_text_roomName" fill="#ff8d8d" layoutX="622.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <Glow level="1.0">
+               <input>
+                  <Lighting diffuseConstant="2.0" specularConstant="1.21" specularExponent="14.95" surfaceScale="0.0">
+                     <bumpInput>
+                        <Shadow color="WHITE" height="0.0" radius="0.0" width="0.0" />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </input>
+            </Glow>
+         </effect>
+      </Text>
+      <Text fx:id="parameters_text_maxPlayers" fill="#ff8d8d" layoutX="650.0" layoutY="415.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <Glow level="1.0">
+               <input>
+                  <Lighting diffuseConstant="2.0" specularConstant="1.12" specularExponent="13.27" surfaceScale="0.0">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </input>
+            </Glow>
+         </effect>
+      </Text>
+      <Text fill="WHITE" layoutX="301.0" layoutY="507.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Текущее количество игроков:" textAlignment="RIGHT" wrappingWidth="264.00000080466276">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="parameters_text_currentCountOfPlayers" fill="#ff8d8d" layoutX="642.0" layoutY="521.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <Glow level="1.0">
+               <input>
+                  <Lighting diffuseConstant="2.0" specularConstant="1.42" specularExponent="15.89" surfaceScale="0.0">
+                     <bumpInput>
+                        <Shadow height="0.0" radius="0.0" width="0.0" />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </input>
+            </Glow>
+         </effect>
+      </Text>
+   </children>
+</AnchorPane>

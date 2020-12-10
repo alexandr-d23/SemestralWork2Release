@@ -1,0 +1,18 @@
+package game.messages;
+
+public enum MessageTypes {
+    CHAT_MESSAGE,
+    ROOM_CHAT_MESSAGE,
+    JOIN_ROOM,
+    SEND_ROOM_LIST,
+    CREATE_ROOM,
+    JOIN_ROOM_ANSWER,
+    LEAVE_ROOM,
+    ROOM_UPDATE_INFO,
+    SYSTEM_MESSAGE,
+    START_GAME_MESSAGE,
+    GAME_STARTED,
+    GAME_ACTION,
+    GAME_VOTE,
+    DISCONNECT
+}

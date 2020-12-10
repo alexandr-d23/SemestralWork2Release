@@ -1,0 +1,46 @@
+#pane{
+    -fx-background-image: url("newspaper.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 660 660;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+
+#brod{
+    -fx-background-image: url("brod.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 108 108;
+    -fx-background-position: center center;
+}
+.table-view{
+    -fx-background-color: transparent;
+    -fx-font-size: 16;
+    -fx-text-alignment: center;
+}
+
+.table-view:focused{
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(#131313 0%, #424141 100%);
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell{
+    -fx-text-fill: white;
+}
+
+.table-row-cell{
+    -fx-background-color: -fx-table-cell-border-color, #616161;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
